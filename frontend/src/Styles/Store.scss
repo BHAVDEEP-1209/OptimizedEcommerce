@@ -1,0 +1,92 @@
+.store{
+    // border: 1px solid blue;
+    width: 100%;
+    // background-color: #fff;
+
+   .heading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1%;
+    align-items: center;
+
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: none;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    h1{
+        margin: 0;
+    }
+   }
+
+    h1{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 3px;
+        margin-top: -10px;
+        text-decoration: underline;
+    }
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: scroll;
+        height: 73vh;
+        gap: 10px;
+        object-fit: cover;
+    }
+
+    .personal{
+        background-color: #fff;
+        padding:10px 5%;
+        .header{
+            display: flex;
+            justify-content: space-between;
+            
+            h3{
+                font-family: 'Limelight', cursive;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+
+            .edit{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        .details{
+            h4{
+                margin: 0;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            span{
+                font-family: 'Jost', sans-serif;
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.items::-webkit-scrollbar{
+    display: none;
+}
+
+.address{
+    margin: 5px !important;
+    font-family: 'Montserrat', sans-serif;
+    
+    span{
+        font-family: 'Jost', sans-serif !important;
+        margin-left: 10px !important;
+        font-weight: 500 !important;
+    }
+}

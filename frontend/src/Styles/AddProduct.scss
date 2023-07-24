@@ -1,0 +1,102 @@
+.productForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #f6f5f3;
+    height: calc(100vh - 110px);
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width : 45%;
+        // border: 1px solid blue;
+        
+        input{
+            border: none;
+            outline: none;
+            padding: 12px;
+            font-size: 16px;
+            background-color: transparent;
+            border-bottom: 1px solid lightgray;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            width: 100%;
+
+            &::placeholder{
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 1px;
+                font-weight: 400;
+            }
+        }
+
+        label{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            position: relative;
+            left: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .h1{
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .h2{
+            font-family: 'Jost', sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .category{
+            padding-bottom: 20px;
+            border-bottom: 1px solid lightgray;
+            width: 100%;
+        }
+
+        .saveAs{
+            margin-top: -20px;
+        }
+
+
+        button{
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            background-color: black;
+            color: #fff;
+            font-family:'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 25px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+
+    .imagesPreview{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding-top: 20px;
+
+        img{
+            width: 220px;
+            height: 260px;
+            object-fit: cover;
+        }
+    }
+}

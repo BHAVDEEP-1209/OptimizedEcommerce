@@ -1,0 +1,171 @@
+.order{
+    background-color: #f6f5f3;
+    padding: 1% 4%;
+    min-height: calc(100vh - 110px);
+
+    .heading{
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .main2{
+        display: flex;
+    }
+
+    .footer2{
+        display: flex !important;
+        justify-content: space-between;
+
+        padding : 0 10px;
+
+        .delivery{
+            color: green;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Jost', sans-serif;
+        }
+
+        .ship{
+            font-family: 'Jost', sans-serif;
+            color: #444444;
+            font-size: 16px;
+        }
+    }
+
+    .orderId{
+        color: blue;
+    }
+
+    .buttons{
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .view{
+            padding: 5px 8px;
+            background-color: black;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            gap: 10px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            font-size: 16px;
+            .icon{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.delivery{
+    color: green;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Jost', sans-serif;
+}
+
+
+
+.trackHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.track{
+    
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.id{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+.trackMain{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    position: relative;
+    left: 10px;
+    padding-top: 40px;
+
+    .location{
+        color: blue;
+        font-size: 40px;
+        position: absolute;
+        left: 0%;
+    }
+}
+
+
+
+.trackFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+    .trackIcon{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.currentLocation{
+    display: flex;
+    flex-direction: column;
+    
+    span{
+        font-family: 'Jost', sans-serif;
+        font-size: 20px;
+        color: rgb(137, 137, 137);
+        letter-spacing: 1px;
+        position: relative;
+        bottom: 30px;
+    }
+}
+
+.location2{
+    color: blue;
+    font-size: 40px !important;
+    position: absolute !important;
+    left: 30% !important;
+}
+.location3{
+    color: blue;
+    font-size: 40px !important;
+    position: absolute !important;
+    left: 60% !important;
+}
+.location4{
+    color: blue;
+    font-size: 40px !important;
+    position: absolute !important;
+    left: 90% !important;
+}
+
+.view2{
+    background-color: red !important;
+    border: none;
+}
+
+.view3{
+    background-color: rgb(57, 57, 244) !important;
+    border: none;
+    width: 150px !important;
+}

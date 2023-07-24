@@ -1,0 +1,139 @@
+.register{
+    width: 100%;
+    
+    .imgContainer{
+        position: relative;
+        img{
+            width: 100%;
+        }
+
+        span{
+            // color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 35px;
+            position: absolute;
+            color: #fff;
+            top: 35%;
+            left: 45%;
+        }
+    }
+
+
+    // formContainer
+
+    .formContainer{
+        background-color: #f6f5f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+
+        form{
+
+            h1{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 40px;
+                text-align: center;
+                letter-spacing: 5px;
+            }
+
+            
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            gap: 20px;
+            
+            .inputDetails{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                // margin-bottom: 20px;
+
+                input{
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid grey;
+                    background-color: transparent;  
+                    font-size: 18px;
+                    font-family: 'Poppins', sans-serif;
+
+                    &::placeholder{
+                       font-family: 'Montserrat', sans-serif;
+                       font-size: 18px;
+                       letter-spacing: 3px;
+                    }
+                }
+
+                button{
+                    padding: 12px;
+                    background-color: black;
+                    color: #fff;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 3px;
+                    cursor: pointer;
+                    margin-bottom: 30px;
+                    // margin-top: 30px;
+                }
+            }
+            
+            .otherSignInOptions{
+                display: flex;
+                justify-content: space-evenly;
+                
+                div{
+                    width: 40%;
+                    display: flex;
+                    align-items: center;
+                    background-color: #4285F4;
+                    box-shadow: 0 8px 10px -5px rgba(0,0,0,0.2);
+                    cursor: pointer;
+
+                    img{
+                        width: 35px;
+                        padding: 5px;
+                        background-color: #fff;
+                    }
+                    span{
+                        padding: 5px 30px;
+                        color: #fff;
+                        font-family: 'Jost', sans-serif;
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                .div2{
+                    background-color: rgb(255, 153, 0);
+
+                    img{
+                        background-color: rgb(231, 184, 114);
+                    }
+                }
+            }
+            
+        }
+    }
+   
+}
+
+.registerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    span{
+        font-family: 'Jost', sans-serif;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    a{
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+    }
+}
