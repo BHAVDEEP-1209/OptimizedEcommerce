@@ -1,0 +1,254 @@
+.checkout {
+    background-color: #f6f5f3;
+    height: max-content;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+    .orderDetails {
+        background-color: #fff;
+        position: relative;
+        top: 50px;
+        padding: 20px 40px;
+        height: 550px;
+
+        .button2{
+            width: 100%;
+            padding: 14px;
+            font-size: 16px;
+            background-color: black;
+            color: #fff;
+            font-family:'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .total {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+            }
+
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-decoration: underline;
+            }
+
+            span {
+                color: #444444 !important;
+                font-size: 18px !important;
+                font-family: 'Jost', sans-serif;
+                letter-spacing: 1px;
+            }
+
+            border-bottom: 1px solid lightgray;
+
+
+        }
+
+        .offers {
+            input {
+                font-size: 18px;
+                padding: 10px;
+                font-family: 'Montserrat', sans-serif;
+                border: 2px solid black;
+                border-radius: 5px 0 0 5px;
+                border-right: none;
+
+
+            }
+
+            button {
+                padding: 11px;
+                font-size: 18px;
+                border-radius: 0 5px 5px 0;
+                background-color: black;
+                color: #fff;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: 2px;
+                border-left: none;
+                cursor: pointer;
+
+            }
+
+            .coupons {
+
+                h1 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    letter-spacing: 2px;
+                    text-decoration: underline;
+                }
+
+                .coupon {
+
+                    h3 {
+                        margin: 0;
+                        font-family: 'Poppins', sans-serif;
+                        margin-bottom: 2px;
+                    }
+
+
+                    span {
+                        color: #444444 !important;
+                        font-size: 14px !important;
+                        font-family: 'Jost', sans-serif;
+                        letter-spacing: 1px;
+                    }
+
+                    margin-bottom: 10px;
+                }
+            }
+
+            border-bottom: 1px solid lightgray;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+
+.cartItem {
+    width: 800px !important;
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    gap: 20px;
+    margin-bottom: 25px;
+
+    img {
+        width: 180px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            align-items: center;
+            padding: 12px 10px;
+
+            .leftInfo{
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+                margin-bottom: 5px;
+
+                .priceInfo{
+                    display: flex;
+                    gap: 20px;
+
+                    .old{
+                        text-decoration: line-through;
+                        color: rgb(237, 93, 93);
+                    }
+                }
+
+                span{
+                    color: rgb(76, 70, 70);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+
+
+
+            h1 {
+                margin: 0;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 18px;
+                margin-bottom: 1px;
+                text-decoration: underline;
+            }
+
+            span {
+                font-family: 'Jost', sans-serif;
+                font-size: 18px;
+            }
+
+            .delete {
+                cursor: pointer;
+
+            }
+        }
+
+        .main {
+            padding: 0 10px;
+            justify-content: space-between;
+
+            span {
+                font-family: 'Jost', sans-serif;
+                font-size: 18px;
+                color: rgb(155, 155, 155);
+            }
+
+            margin-bottom: 20px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .footer {
+            display: flex;
+            height: 50px;
+            align-items: center;
+            padding: 5px 10px;
+            width: 20%;
+            justify-content: space-between;
+        }
+
+        .add {
+            background-color: black;
+            color: #fff;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+
+            .icon {
+                font-size: 20px;
+            }
+
+        }
+
+        h1 {
+            font-family: 'Limelight', cursive;
+            font-size: 25px;
+        }
+    }
+
+}
+
+
+.cartTotal{
+    font-size: 24px !important;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 0 !important;
+}

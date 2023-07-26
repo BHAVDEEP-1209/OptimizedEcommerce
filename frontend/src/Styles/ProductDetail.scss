@@ -1,0 +1,206 @@
+// #f6f5f3
+.productDetail{
+    background-color: #f6f5f3;
+    display: flex;
+    justify-content: center;
+    padding-top: 23px;
+
+    .productContainer{
+        width: 80%;
+        height: 100vh;
+        display: flex;
+        gap: 20px;
+
+        .imagesDiv{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            overflow: scroll;
+            flex-wrap: wrap;
+
+            img{
+                width: 48%;
+                height: 80%;
+                object-fit: cover;
+            }
+        }
+
+        .imagesDiv::-webkit-scrollbar{
+            display: none;
+        }
+
+        .productInfo{
+            width: 40%;
+            height: 100%;
+            padding: 20px 40px;
+            // background-color: #fff;
+
+            h3{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+
+            h1{
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 3px;
+            }
+
+            h2{
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 2px;
+            }
+
+            span{
+                color: rgb(151, 151, 151);
+                font-size: 22px;
+                font-family: 'Jost', sans-serif;
+                // margin-top: -60px;
+
+            }
+
+            .description{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .downIcon{
+                    width: 40px;
+                    height: 40px;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                h3{
+                    text-decoration: none;
+                    font-size: 16px;
+                }
+
+                
+            }
+
+            .descDetail{
+                font-family: 'Jost', sans-serif;
+                font-size: 20px;
+
+                span{
+                    font-size: 16px;
+                }
+
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+
+            .reviewStars{
+                display: flex;
+                align-items: center;
+                padding: 4% 0;
+                .fullStar , .halfStar{
+                    width: 20px;
+                    height: 20px;
+                }
+                .halfStar{
+                    margin-right: 5px;
+                }
+
+                span{
+                    font-size: 16px;
+                }
+            }
+
+            button{
+                width: 100%;
+                padding: 14px;
+                font-size: 16px;
+                background-color: black;
+                color: #fff;
+                font-family:'Montserrat', sans-serif;
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin-top: 25px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .orders{
+                display: flex;
+                margin: 30px 0;
+                margin-bottom: 10px;
+                width: 40%;
+                justify-content: space-between;
+
+                .add{
+                    background-color: black;
+                    color: #fff;
+                    padding: 2px;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        box-shadow: 0 10px 10px -3px rgba(0,0,0,0.4);
+                    }
+                }
+
+            }
+
+            .salesInfo{
+
+                padding-top: 10px;
+
+                .ordersInfo{
+
+                    display: flex;
+                    // border: 1px solid red;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 10px;
+
+                     h1{
+                        font-family: 'Jost', sans-serif;
+                        font-size: 18px;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                     }
+
+                     img{
+                        width: 40px;
+                        height: 40px;
+                        object-fit: cover;
+                     }
+
+                }
+            }
+        }
+    }
+}
+
+.description2{
+    display: flex;
+    align-items: center;
+
+    h3{
+        text-decoration: none !important;
+        font-size: 16px !important;
+        margin-right: 10px !important;
+    }
+
+    span{
+        font-size: 18px !important;
+        text-decoration: underline !important;
+    }
+}
