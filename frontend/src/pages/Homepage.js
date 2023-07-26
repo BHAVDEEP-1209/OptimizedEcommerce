@@ -29,7 +29,7 @@ const Homepage = () => {
     const getVendor=async()=>{
       setLoading(true);
       try {
-        const result = (await getAllProducts()).data.products;
+        const result = (await getAllProducts({category : "all", email : user?.email})).data.products;
         if(user.role=="vendor"){
           const temp2  = result.filter((ele)=>{
             return (ele?.uploadedBy!= user?.email && ele?.savedAs == "product")

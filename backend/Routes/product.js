@@ -79,7 +79,7 @@ router.post("/reduceProductOrder",async(req,res)=>{
   }
 })
 
-router.get("/getAllProducts", productController.getAllProducts);
+router.post("/getAllProducts", productController.getAllProducts);
 router.post("/createProduct", productController.create);
 router.delete("/deleteProduct/:id", productController.deleteProduct);
 router.get("/getProductDetails/:id", productController.getProductDetails);

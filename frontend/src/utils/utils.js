@@ -20,10 +20,9 @@ export const getAdminOrders = (values) =>(axios.post("http://localhost:5000/cart
 // getting order History for admin
 export const getAdminOrdersHistory = (values) =>(axios.post("http://localhost:5000/cart/getAdminOrdersHistory",values));
 
-
 ///////////
 
-export const getAllProducts = () =>(axios.get("http://localhost:5000/product/getAllProducts"));
+export const getAllProducts = (values) =>(axios.post("http://localhost:5000/product/getAllProducts",values));
 
 export const deleteProduct = (id) =>(axios.delete(`http://localhost:5000/product/deleteProduct/${id}`))
 

@@ -48,7 +48,6 @@ const ProductDetail = () => {
   useEffect(() => {
     const get = async () => {
       try {
-        
         const result = await getProduct(id);
         setProduct(result.data);
         const totalSales = await getProductTotalSales({uploadedBy : result.data?.uploadedBy , id : result.data?._id});

@@ -130,7 +130,7 @@ export const userSlice = createSlice({
         state.isLoading = true;
     })
 
-    ///----------updatting User Info-----------------!
+    //<!----------updatting User Info-----------------!>
     .addCase(updateUserInfo.fulfilled, (state, action) => {
       const {business ,address , __v , _id , ...others }  = action.payload.data;
       state.currentUser = others;

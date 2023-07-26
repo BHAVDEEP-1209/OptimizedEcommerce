@@ -14,6 +14,8 @@ exports.create = async (req, res) => {
 exports.getAllProducts = async (req, res) => {
   try {
     const productCount = await Product.countDocuments();
+    const category = req.body.category;
+    const email = req.body.email;
 
     // search is done but filter and pagination is not done!
     // searching the products!
@@ -23,10 +25,14 @@ exports.getAllProducts = async (req, res) => {
         name: { $regex: q, $options: "i" },
       });
       res.status(200).json({ products, productCount });
-    } else {
-      const products = await Product.find().sort({ Orders: -1 });
+    } else if(category=="all"){
+      const products = await Product.find({uploadedBy : { $ne : {email} } , savedAs : "product"}).sort({ Orders: -1 });
+      res.status(200).json({ products, productCount });
+    }else{
+      const products = await Product.find({category : category,uploadedBy : { $ne : {email} } , savedAs : "product"}).sort({ Orders: -1 });
       res.status(200).json({ products, productCount });
     }
+
   } catch (error) {
     res.status(500).json("Error while fetching products!");
   }
